@@ -1,0 +1,15 @@
+.header {
+    background: #fff;
+    border-bottom: 1px solid #999;
+    height
+}
+
+.content {
+    min-height: 80vh !important;
+}
+
+.footer {
+    text-align: center;
+    border-top: 1px solid #999;
+    min-height: 10vh;
+}
