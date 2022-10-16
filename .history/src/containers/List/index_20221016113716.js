@@ -9,18 +9,18 @@ class PageList extends Component {
       data: [],
     };
   }
-  componentDidMount() {
-    let url = "http://www.dell-lee.com/react/api/list.json";
-    const id = this.props.match.params.id; //api: this.props
-    if (id) {
-      url = url + "?id=" + id;
-    }
-    axios.get(url).then((res) => {
-      this.setState({
-        data: res.data.data,
-      });
-    });
-  }
+  // componentDidMount() {
+  //   let url = "http://www.dell-lee.com/react/api/list.json";
+  //   const id = this.props.match.params.id; //api: this.props
+  //   if (id) {
+  //     url = url + "?id=" + id;
+  //   }
+  //   axios.get(url).then((res) => {
+  //     this.setState({
+  //       data: res.data.data,
+  //     });
+  //   });
+  // }
 
   componentWillReceiveProps(nextProps) {
     const id = nextProps.match.params.id;

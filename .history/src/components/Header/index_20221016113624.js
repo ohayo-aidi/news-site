@@ -18,7 +18,7 @@ class AppHeader extends Component {
       return (
         <Menu.Item key={item.id}>
           <Link to={`/${item.id}`}>
-            <Icon type={item.icon} /> {item.title}
+            <Icon type={item.icon} />{item.title}
           </Link>
         </Menu.Item>
       );

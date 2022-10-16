@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { List } from "antd";
+import { Divider, List, Typography } from "antd";
 import axios from "axios";
 
 class PageList extends Component {
@@ -32,7 +32,6 @@ class PageList extends Component {
         });
       });
   }
-
   render() {
     return (
       <List

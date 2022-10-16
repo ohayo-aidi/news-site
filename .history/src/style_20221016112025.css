@@ -1,13 +1,13 @@
-/* .Layout {
-    height: 100% !important;
-} */
+.Layout {
+    height: 100%
+}
 .header {
     background: #fff !important;
     border-bottom: 1px solid #999;
     height: 10vh;
 }
 .content {
-    min-height: 83vh !important;
+    min-height: 80vh !important;
 }
 
 .footer {

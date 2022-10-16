@@ -17,9 +17,8 @@ class AppHeader extends Component {
     return this.state.list.map((item) => {
       return (
         <Menu.Item key={item.id}>
-          <Link to={`/${item.id}`}>
-            <Icon type={item.icon} /> {item.title}
-          </Link>
+          <Icon type={item.icon} />
+          {item.title}
         </Menu.Item>
       );
     });

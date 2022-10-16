@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { List } from "antd";
+import { Divider, List, Typography } from "antd";
 import axios from "axios";
 
 class PageList extends Component {
@@ -20,17 +20,6 @@ class PageList extends Component {
         data: res.data.data,
       });
     });
-  }
-
-  componentWillReceiveProps(nextProps) {
-    const id = nextProps.match.params.id;
-    axios
-      .get("http://www.dell-lee.com/react/api/list.json?id=" + id)
-      .then((res) => {
-        this.setState({
-          data: res.data.data,
-        });
-      });
   }
 
   render() {

@@ -14,13 +14,15 @@ function App() {
         </Header>
 
         <Content className="content">
-          <Switch>
-            <Route path="/detail" component={Detail} />
-            <Route path="/:id?" component={List} />
-          </Switch>
+          <Router>
+            <Switch>
+              <Route path="/detail" component={Detail} />
+              <Route path="/" component={List} />
+            </Switch>
+          </Router>
         </Content>
 
-        <Footer className="footer">@copyright copyright-2022</Footer>
+        <Footer className="footer">Footer</Footer>
       </Layout>
     </Router>
   );

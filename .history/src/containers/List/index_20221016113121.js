@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { List } from "antd";
+import { List} from "antd";
 import axios from "axios";
 
 class PageList extends Component {

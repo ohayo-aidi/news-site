@@ -20,7 +20,7 @@ function App() {
           </Switch>
         </Content>
 
-        <Footer className="footer">@copyright copyright-2022</Footer>
+        <Footer className="footer">@copyright@copyright</Footer>
       </Layout>
     </Router>
   );
