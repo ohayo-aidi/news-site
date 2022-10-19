@@ -40,11 +40,11 @@ class PageList extends Component {
         style={{ background: "#fff" }}
         bordered
         dataSource={this.state.data}
-        renderItem={(item) => (
-          <List.Item>
-            <Link to={`/detail/${item.id}`}> {item.title} </Link> 
-          </List.Item>
-        )}
+        renderItem={(item) => 
+        <List.Item>
+          <Link> </Link>
+          {item.title}
+        </List.Item>}
       />
     );
   }

@@ -42,7 +42,7 @@ class PageList extends Component {
         dataSource={this.state.data}
         renderItem={(item) => (
           <List.Item>
-            <Link to={`/detail/${item.id}`}> {item.title} </Link> 
+            <Link to> {item.title} </Link>
           </List.Item>
         )}
       />

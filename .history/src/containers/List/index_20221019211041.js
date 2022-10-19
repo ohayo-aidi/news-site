@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { List } from "antd";
 import axios from "axios";
 
@@ -40,11 +39,8 @@ class PageList extends Component {
         style={{ background: "#fff" }}
         bordered
         dataSource={this.state.data}
-        renderItem={(item) => (
-          <List.Item>
-            <Link to={`/detail/${item.id}`}> {item.title} </Link> 
-          </List.Item>
-        )}
+        renderItem={(item) => 
+        <List.Item>{item.title}</List.Item>}
       />
     );
   }

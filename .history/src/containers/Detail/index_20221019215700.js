@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
 import { Card } from "antd";
-import "./style.css";
 class Detail extends Component {
   constructor(props) {
     super(props);
@@ -25,7 +24,7 @@ class Detail extends Component {
     return (
       <Card title={this.state.title}>
         <div dangerouslySetInnerHTML={{__html: this.state.content}}></div> 
-        {/* 作用是解析content里的HTML */}
+        作用是解析content里的HTML
       </Card>
     );
   }

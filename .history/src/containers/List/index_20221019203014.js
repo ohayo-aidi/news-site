@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import { List } from "antd";
 import axios from "axios";
 
@@ -14,7 +13,7 @@ class PageList extends Component {
     let url = "http://www.dell-lee.com/react/api/list.json";
     const id = this.props.match.params.id; //api: this.props
     if (id) {
-      url = url + "?id=" + id;//解决Network里id为undefined的情况
+      url = url + "?id=" + id;//解决Network里id为undefied
     }
     axios.get(url).then((res) => {
       this.setState({
@@ -40,11 +39,7 @@ class PageList extends Component {
         style={{ background: "#fff" }}
         bordered
         dataSource={this.state.data}
-        renderItem={(item) => (
-          <List.Item>
-            <Link to={`/detail/${item.id}`}> {item.title} </Link> 
-          </List.Item>
-        )}
+        renderItem={(item) => <List.Item>{item.title}</List.Item>}
       />
     );
   }
