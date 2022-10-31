@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route, Routes} from "react-router-dom"
 import AppHeader from "./components/Header";
 import './style.css'
 import List from './containers/List/index'
+import Login from './components/Login/index'
+import Test from './components/Test/index'
 import Detail from './containers/Detail/index'
 const { Header, Footer, Content } = Layout;
 function App() {
@@ -14,10 +16,12 @@ function App() {
         </Header>
 
         <Content className="content">
-          <Switch>
-            <Route path="/detail/:id?" component={Detail} />
-            <Route path="/:id?" component={List} />
-          </Switch>
+            <Login />
+            <Test/>
+            <Switch>
+              <Route path="/detail/:id?" component={Detail} />
+              <Route path="/:id?" component={List} />
+            </Switch>
         </Content>
 
         <Footer className="footer">@copyright copyright-2022</Footer>
